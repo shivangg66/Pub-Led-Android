@@ -15,9 +15,29 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
     }
 
-    public void changeFragment(View view) {
+    public void fragment_view(View view) {
         Fragment fragment;
-        if (view == findViewById(R.id.button4)) {
+        if (view == findViewById(R.id.view)) {
+            fragment = new Fragment();
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.f1, fragment);
+            ft.commit();
+        }
+    }
+    public void fragment_edit(View view) {
+        Fragment fragment;
+        if (view == findViewById(R.id.edit)) {
+            fragment = new Fragment();
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.f1, fragment);
+            ft.commit();
+        }
+    }
+    public void fragment_report(View view) {
+        Fragment fragment;
+        if (view == findViewById(R.id.report)) {
             fragment = new Fragment();
             FragmentManager fm = getFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
