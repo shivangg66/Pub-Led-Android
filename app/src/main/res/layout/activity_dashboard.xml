@@ -72,10 +72,9 @@
             android:text="Report"/>
 
 </LinearLayout>
-                <fragment
+                <FrameLayout
                     android:id="@+id/f1"
-                    android:name="com.example.pub_led.Fragment1"
                     android:layout_width="match_parent"
-                    android:layout_height="530dp"></fragment>
+                    android:layout_height="530dp"></FrameLayout>
 
 </LinearLayout>
