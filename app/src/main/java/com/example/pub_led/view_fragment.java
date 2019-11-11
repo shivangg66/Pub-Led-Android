@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TableLayout;
+import android.widget.TextView;
 
 
 /**
@@ -68,6 +69,9 @@ public class view_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootview = inflater.inflate(R.layout.fragment_view_fragment, container,false);
+        TextView t1 = (TextView)rootview.findViewById(R.id.ft1);
+        TableLayout tl1 = (TableLayout)rootview.findViewById(R.id.ftl1);
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_view_fragment, container, false);
     }
