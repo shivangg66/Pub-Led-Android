@@ -48,33 +48,23 @@
                     android:text="Logout" />
             </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
+
         <Button
             android:id="@+id/view"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:onClick="fragment_view"
+            android:layout_width="450dp"
+            android:layout_height="150dp"
             android:text="View"/>
         <Button
             android:id="@+id/edit"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:onClick="fragment_edit"
+            android:layout_width="450dp"
+            android:layout_height="200dp"
             android:text="Edit"/>
         <Button
             android:id="@+id/report"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:onClick="fragment_report"
+            android:layout_width="450dp"
+            android:layout_height="200dp"
             android:text="Report"/>
 
-</LinearLayout>
-                <FrameLayout
-                    android:id="@+id/f1"
-                    android:layout_width="match_parent"
-                    android:layout_height="530dp"></FrameLayout>
+
 
 </LinearLayout>
