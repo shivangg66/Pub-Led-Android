@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         {
                             String pass=cur.getString(1);
 
-                            if(s2==pass) {
+                            if(s2.equals(pass)) {
                                 Intent i = new Intent(getApplicationContext(),Dashboard.class);
                                 startActivity(i);
                             }
