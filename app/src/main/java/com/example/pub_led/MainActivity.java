@@ -56,7 +56,12 @@ public class MainActivity extends AppCompatActivity {
 
                             if(s2.equals(pass)) {
                                 Intent i = new Intent(getApplicationContext(),Dashboard.class);
+                                i.putExtra("sap","s1");
                                 startActivity(i);
+                            }
+                            else
+                            {
+                                Toast.makeText(MainActivity.this,"Enter login details again",Toast.LENGTH_SHORT).show();
                             }
 
 

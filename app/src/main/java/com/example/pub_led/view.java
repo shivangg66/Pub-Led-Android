@@ -2,6 +2,8 @@ package com.example.pub_led;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
@@ -21,29 +23,7 @@ public class view extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
-        TableLayout tl1 = (TableLayout)findViewById(R.id.view_tl1);
-        TextView t1 = (TextView)findViewById(R.id.view_t1);
-        TableLayout tl2 = (TableLayout)findViewById(R.id.view_tl2);
-        TextView t2 = (TextView)findViewById(R.id.view_t2);
-        DataBaseHelper myDbHelper = new DataBaseHelper(view.this);
-        try{
-            myDbHelper.createDataBase();
-
-        }
-        catch (IOException ioe)
-        {
-            throw new Error("Unable to Create Database");
-        }
-        try{
-            myDbHelper.openDataBase();
-        }
-        catch (SQLException sqle)
-        {
-            throw sqle;
-        }
-        Toast.makeText(this, "Successfully Imported", Toast.LENGTH_SHORT).show();
-
-
+        Intent view = getIntent();
 
     }
 }
